@@ -22,43 +22,38 @@ namespace Dashboard
         {
             this.createEditNotePanel.Hide();
             this.previousNotesPanel.Hide();
-            this.exitButton.Hide();
+        }
+        private void previousNotesPanel_Paint(object sender, PaintEventArgs e)
+        {
+            //None
         }
 
         //Buttons (Functionality 1)
         private void loadButton_Click(object sender, EventArgs e)
         {
-            this.exitButton.Show();
             this.previousNotesPanel.Show();
             this.createEditNotePanel.Hide();
+            this.editButton.Show();
             this.deleteButton2.Hide();
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            this.exitButton.Show();
             this.createEditNotePanel.Show();
             this.previousNotesPanel.Hide();
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            this.exitButton.Show();
             this.previousNotesPanel.Show();
             this.createEditNotePanel.Hide();
             this.deleteButton2.Show();
+            this.editButton.Hide();
         }
 
         private void saveChangesButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            this.exitButton.Hide();
-            this.previousNotesPanel.Hide();
-            this.createEditNotePanel.Hide();
+            this.exitButton.Show();
         }
 
         //Buttons (Functionality 2)
@@ -91,11 +86,58 @@ namespace Dashboard
 
         private void saveChangesButton_MouseClick(object sender, MouseEventArgs e)
         {
-            //Changes Coloor
+            //Changes Color
             loadButton.BackColor = Color.FromArgb(255, 184, 76);
             createButton.BackColor = Color.FromArgb(255, 184, 76);
             deleteButton.BackColor = Color.FromArgb(255, 184, 76);
             saveChangesButton.BackColor = Color.FromArgb(83, 113, 136);
+        }
+
+        //Buttons (Functionality 3)
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            this.titleBox.Text = string.Empty;
+            this.noteBox.Text = string.Empty;
+        }
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.previousNotesPanel.Hide();
+            this.createEditNotePanel.Hide();
+
+            //Remove color in menu button
+            loadButton.BackColor = Color.FromArgb(255, 184, 76);
+            createButton.BackColor = Color.FromArgb(255, 184, 76);
+            deleteButton.BackColor = Color.FromArgb(255, 184, 76);
+            saveChangesButton.BackColor = Color.FromArgb(255, 184, 76);
+        }
+
+        private void exitButton2_Click(object sender, EventArgs e)
+        {
+            this.previousNotesPanel.Hide();
+            this.createEditNotePanel.Hide();
+
+            //Remove color in menu button
+            loadButton.BackColor = Color.FromArgb(255, 184, 76);
+            createButton.BackColor = Color.FromArgb(255, 184, 76);
+            deleteButton.BackColor = Color.FromArgb(255, 184, 76);
+            saveChangesButton.BackColor = Color.FromArgb(255, 184, 76);
+        }
+
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            createEditNotePanel.Show();
+            previousNotesPanel.Hide();
+        }
+
+        private void deleteButton2_Click(object sender, EventArgs e)
+        {
+            createEditNotePanel.Hide();
+            previousNotesPanel.Show();
         }
     }
 }
