@@ -20,23 +20,33 @@ namespace Dashboard
         //Main Page
         private void dashboard_Load(object sender, EventArgs e)
         {
-         
+            this.createEditNotePanel.Hide();
+            this.previousNotesPanel.Hide();
+            this.exitButton.Hide();
         }
 
-        //Buttons (Functionality)
+        //Buttons (Functionality 1)
         private void loadButton_Click(object sender, EventArgs e)
         {
-
+            this.exitButton.Show();
+            this.previousNotesPanel.Show();
+            this.createEditNotePanel.Hide();
+            this.deleteButton2.Hide();
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
-
+            this.exitButton.Show();
+            this.createEditNotePanel.Show();
+            this.previousNotesPanel.Hide();
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-
+            this.exitButton.Show();
+            this.previousNotesPanel.Show();
+            this.createEditNotePanel.Hide();
+            this.deleteButton2.Show();
         }
 
         private void saveChangesButton_Click(object sender, EventArgs e)
@@ -44,7 +54,14 @@ namespace Dashboard
 
         }
 
-        //Buttons (Mouse Click)
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.exitButton.Hide();
+            this.previousNotesPanel.Hide();
+            this.createEditNotePanel.Hide();
+        }
+
+        //Buttons (Functionality 2)
         private void loadButton_MouseClick(object sender, MouseEventArgs e)
         {
             //Changes Color
@@ -79,11 +96,6 @@ namespace Dashboard
             createButton.BackColor = Color.FromArgb(255, 184, 76);
             deleteButton.BackColor = Color.FromArgb(255, 184, 76);
             saveChangesButton.BackColor = Color.FromArgb(83, 113, 136);
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

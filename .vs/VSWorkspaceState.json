@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HOMEYgui",
-    "\\HOMEYgui\\HOMEYgui"
+    "\\Dashboard",
+    "\\Dashboard\\Dashboard"
   ],
-  "SelectedNode": "\\HOMEYgui\\HOMEYgui\\HOMEYgui.cs",
+  "SelectedNode": "\\Dashboard\\Dashboard\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

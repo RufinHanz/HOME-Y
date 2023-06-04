@@ -40,14 +40,26 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.previousNotesPanel = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.createEditNotePanel = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.deleteButton2 = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.previousNotesPanel.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.createEditNotePanel.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -69,17 +81,17 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(0, 6);
+            this.panel6.Location = new System.Drawing.Point(0, -4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 89);
+            this.panel6.Size = new System.Drawing.Size(5, 99);
             this.panel6.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(110, 6);
+            this.panel4.Location = new System.Drawing.Point(110, -5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 91);
+            this.panel4.Size = new System.Drawing.Size(5, 102);
             this.panel4.TabIndex = 4;
             // 
             // panel3
@@ -189,6 +201,8 @@
             // previousNotesPanel
             // 
             this.previousNotesPanel.BackColor = System.Drawing.Color.White;
+            this.previousNotesPanel.Controls.Add(this.editButton);
+            this.previousNotesPanel.Controls.Add(this.deleteButton2);
             this.previousNotesPanel.Controls.Add(this.panel9);
             this.previousNotesPanel.Controls.Add(this.panel8);
             this.previousNotesPanel.Controls.Add(this.panel5);
@@ -198,21 +212,13 @@
             this.previousNotesPanel.Size = new System.Drawing.Size(508, 418);
             this.previousNotesPanel.TabIndex = 3;
             // 
-            // panel7
+            // panel9
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.panel7.Location = new System.Drawing.Point(0, 26);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(5, 388);
-            this.panel7.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(508, 30);
-            this.panel5.TabIndex = 2;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel9.Location = new System.Drawing.Point(0, 413);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(508, 5);
+            this.panel9.TabIndex = 4;
             // 
             // panel8
             // 
@@ -222,26 +228,131 @@
             this.panel8.Size = new System.Drawing.Size(5, 392);
             this.panel8.TabIndex = 3;
             // 
-            // button1
+            // panel5
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(575, 417);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(508, 30);
+            this.panel5.TabIndex = 2;
             // 
-            // panel9
+            // panel7
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.panel9.Location = new System.Drawing.Point(0, 413);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(508, 5);
-            this.panel9.TabIndex = 4;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel7.Location = new System.Drawing.Point(0, 26);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 388);
+            this.panel7.TabIndex = 1;
+            // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.exitButton.FlatAppearance.BorderSize = 0;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.exitButton.Location = new System.Drawing.Point(575, 418);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(75, 27);
+            this.exitButton.TabIndex = 5;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(5, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 17);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "List of Notes:";
+            // 
+            // createEditNotePanel
+            // 
+            this.createEditNotePanel.BackColor = System.Drawing.Color.White;
+            this.createEditNotePanel.Controls.Add(this.panel11);
+            this.createEditNotePanel.Controls.Add(this.panel12);
+            this.createEditNotePanel.Controls.Add(this.panel13);
+            this.createEditNotePanel.Controls.Add(this.panel14);
+            this.createEditNotePanel.Location = new System.Drawing.Point(142, 0);
+            this.createEditNotePanel.Name = "createEditNotePanel";
+            this.createEditNotePanel.Size = new System.Drawing.Size(508, 418);
+            this.createEditNotePanel.TabIndex = 6;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel11.Location = new System.Drawing.Point(0, 413);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(508, 5);
+            this.panel11.TabIndex = 4;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel12.Location = new System.Drawing.Point(503, 23);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(5, 392);
+            this.panel12.TabIndex = 3;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel13.Controls.Add(this.textBox2);
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(508, 30);
+            this.panel13.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(5, 5);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(140, 17);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.Text = "Create / Edit Note:";
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel14.Location = new System.Drawing.Point(0, 26);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(5, 388);
+            this.panel14.TabIndex = 1;
+            // 
+            // deleteButton2
+            // 
+            this.deleteButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.deleteButton2.FlatAppearance.BorderSize = 0;
+            this.deleteButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.deleteButton2.Location = new System.Drawing.Point(3, 387);
+            this.deleteButton2.Name = "deleteButton2";
+            this.deleteButton2.Size = new System.Drawing.Size(75, 27);
+            this.deleteButton2.TabIndex = 6;
+            this.deleteButton2.Text = "Delete";
+            this.deleteButton2.UseVisualStyleBackColor = false;
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.editButton.FlatAppearance.BorderSize = 0;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.editButton.Location = new System.Drawing.Point(5, 387);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 27);
+            this.editButton.TabIndex = 7;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = false;
             // 
             // dashboard
             // 
@@ -249,8 +360,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
             this.ClientSize = new System.Drawing.Size(650, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.previousNotesPanel);
+            this.Controls.Add(this.createEditNotePanel);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel);
@@ -261,6 +373,11 @@
             this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.previousNotesPanel.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.createEditNotePanel.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -275,15 +392,24 @@
         private System.Windows.Forms.Button createButton;
         private System.Windows.Forms.Button saveChangesButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel previousNotesPanel;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel createEditNotePanel;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Button deleteButton2;
+        private System.Windows.Forms.Button editButton;
     }
 }
 
