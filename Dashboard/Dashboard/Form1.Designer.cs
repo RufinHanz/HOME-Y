@@ -39,8 +39,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.previousNotesPanel = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.previousNotesPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel
@@ -54,9 +61,9 @@
             this.panel.Controls.Add(this.createButton);
             this.panel.Controls.Add(this.loadButton);
             this.panel.Controls.Add(this.pictureBox1);
-            this.panel.Location = new System.Drawing.Point(0, 12);
+            this.panel.Location = new System.Drawing.Point(0, 26);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(115, 435);
+            this.panel.Size = new System.Drawing.Size(115, 421);
             this.panel.TabIndex = 0;
             // 
             // panel6
@@ -88,7 +95,7 @@
             this.saveChangesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.saveChangesButton.FlatAppearance.BorderSize = 0;
             this.saveChangesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveChangesButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
+            this.saveChangesButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
             this.saveChangesButton.ForeColor = System.Drawing.Color.Black;
             this.saveChangesButton.Location = new System.Drawing.Point(0, 270);
             this.saveChangesButton.Name = "saveChangesButton";
@@ -104,7 +111,7 @@
             this.deleteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.deleteButton.FlatAppearance.BorderSize = 0;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
             this.deleteButton.ForeColor = System.Drawing.Color.Black;
             this.deleteButton.Image = global::Dashboard.Properties.Resources.Delete;
             this.deleteButton.Location = new System.Drawing.Point(0, 216);
@@ -122,7 +129,7 @@
             this.createButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.createButton.FlatAppearance.BorderSize = 0;
             this.createButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.createButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
+            this.createButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
             this.createButton.ForeColor = System.Drawing.Color.Black;
             this.createButton.Image = global::Dashboard.Properties.Resources.Create;
             this.createButton.Location = new System.Drawing.Point(0, 162);
@@ -140,7 +147,7 @@
             this.loadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.loadButton.FlatAppearance.BorderSize = 0;
             this.loadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold);
+            this.loadButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
             this.loadButton.ForeColor = System.Drawing.Color.Black;
             this.loadButton.Image = global::Dashboard.Properties.Resources.Load;
             this.loadButton.Location = new System.Drawing.Point(0, 108);
@@ -168,23 +175,82 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 20);
+            this.panel1.Size = new System.Drawing.Size(115, 30);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.panel2.Location = new System.Drawing.Point(0, 440);
+            this.panel2.Location = new System.Drawing.Point(0, 445);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 10);
+            this.panel2.Size = new System.Drawing.Size(650, 5);
             this.panel2.TabIndex = 2;
+            // 
+            // previousNotesPanel
+            // 
+            this.previousNotesPanel.BackColor = System.Drawing.Color.White;
+            this.previousNotesPanel.Controls.Add(this.panel9);
+            this.previousNotesPanel.Controls.Add(this.panel8);
+            this.previousNotesPanel.Controls.Add(this.panel5);
+            this.previousNotesPanel.Controls.Add(this.panel7);
+            this.previousNotesPanel.Location = new System.Drawing.Point(142, 0);
+            this.previousNotesPanel.Name = "previousNotesPanel";
+            this.previousNotesPanel.Size = new System.Drawing.Size(508, 418);
+            this.previousNotesPanel.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel7.Location = new System.Drawing.Point(0, 26);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 388);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(508, 30);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel8.Location = new System.Drawing.Point(503, 23);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(5, 392);
+            this.panel8.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(575, 417);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.panel9.Location = new System.Drawing.Point(0, 413);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(508, 5);
+            this.panel9.TabIndex = 4;
             // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
-            this.ClientSize = new System.Drawing.Size(600, 450);
+            this.ClientSize = new System.Drawing.Size(650, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.previousNotesPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel);
@@ -194,6 +260,7 @@
             this.Load += new System.EventHandler(this.dashboard_Load);
             this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.previousNotesPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -211,6 +278,12 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel previousNotesPanel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel9;
     }
 }
 

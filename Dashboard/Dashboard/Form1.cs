@@ -80,5 +80,10 @@ namespace Dashboard
             deleteButton.BackColor = Color.FromArgb(255, 184, 76);
             saveChangesButton.BackColor = Color.FromArgb(83, 113, 136);
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
