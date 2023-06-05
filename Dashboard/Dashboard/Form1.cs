@@ -12,6 +12,9 @@ namespace Dashboard
 {
     public partial class dashboard : Form
     {
+        DataTable notes = new DataTable();
+        bool editing = false;
+
         public dashboard()
         {
             InitializeComponent();
@@ -22,6 +25,10 @@ namespace Dashboard
         {
             this.createEditNotePanel.Hide();
             this.previousNotesPanel.Hide();
+
+            notes.Columns.Add("Title");
+            notes.Columns.Add("Note");
+            previousNotes.DataSource = notes;
         }
         private void previousNotesPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -35,6 +42,11 @@ namespace Dashboard
             this.createEditNotePanel.Hide();
             this.editButton.Show();
             this.deleteButton2.Hide();
+
+            if (previousNotes == null)
+            {
+                this.previousNotesPanel.Hide();
+            }
         }
 
         private void createButton_Click(object sender, EventArgs e)
@@ -101,7 +113,15 @@ namespace Dashboard
         }
         private void saveButton_Click(object sender, EventArgs e)
         {
-
+            if (editing)
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Title"] = titleBox.Text;
+                notes.Rows[previousNotes.CurrentCell.RowIndex]["Note"] = titleBox.Text;
+            }
+            else
+            {
+                notes.Rows.Add(titleBox.Text, noteBox.Text);
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -130,14 +150,47 @@ namespace Dashboard
 
         private void editButton_Click(object sender, EventArgs e)
         {
+            titleBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
+            noteBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
+
             createEditNotePanel.Show();
             previousNotesPanel.Hide();
         }
 
         private void deleteButton2_Click(object sender, EventArgs e)
         {
+            try
+            {
+                notes.Rows[previousNotes.CurrentCell.RowIndex].Delete();
+            }
+            catch
+            {
+                Console.WriteLine("Invalid Note");
+            }
+
             createEditNotePanel.Hide();
             previousNotesPanel.Show();
+        }
+
+
+        //Data grid view
+        private void previousNotes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            titleBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
+            noteBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
+            editing = true;
+        }
+
+        private void previousNotes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            titleBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
+            noteBox.Text = notes.Rows[previousNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
+            editing = true;
+        }
+
+        private void previousNotes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //None
         }
     }
 }

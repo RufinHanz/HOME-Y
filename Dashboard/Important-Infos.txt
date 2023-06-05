@@ -1,0 +1,14 @@
+Colors:
+#ffb84c = 255, 184, 76
+#537188 = 83, 113, 136
+
+Font: 
+YaHei UI (size 10)
+Microsoft YaHei UI, 10pt, style=Bold
+
+Panels:
+previousNotesPanel
+createEditNotePanel
+
+575, 418
+75, 27

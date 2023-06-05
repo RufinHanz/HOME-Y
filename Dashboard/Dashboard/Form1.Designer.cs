@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -40,33 +43,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.previousNotesPanel = new System.Windows.Forms.Panel();
+            this.exitButton2 = new System.Windows.Forms.Button();
+            this.previousNotes = new System.Windows.Forms.DataGridView();
+            this.editButton = new System.Windows.Forms.Button();
+            this.deleteButton2 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.exitButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.createEditNotePanel = new System.Windows.Forms.Panel();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.noteBox = new System.Windows.Forms.TextBox();
+            this.titleBox = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.deleteButton2 = new System.Windows.Forms.Button();
-            this.editButton = new System.Windows.Forms.Button();
-            this.titleBox = new System.Windows.Forms.TextBox();
-            this.noteBox = new System.Windows.Forms.TextBox();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.exitButton2 = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.previousNotesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).BeginInit();
             this.panel5.SuspendLayout();
             this.createEditNotePanel.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
@@ -209,7 +212,7 @@
             // 
             this.previousNotesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
             this.previousNotesPanel.Controls.Add(this.exitButton2);
-            this.previousNotesPanel.Controls.Add(this.dataGridView1);
+            this.previousNotesPanel.Controls.Add(this.previousNotes);
             this.previousNotesPanel.Controls.Add(this.editButton);
             this.previousNotesPanel.Controls.Add(this.deleteButton2);
             this.previousNotesPanel.Controls.Add(this.panel9);
@@ -218,9 +221,84 @@
             this.previousNotesPanel.Controls.Add(this.panel7);
             this.previousNotesPanel.Location = new System.Drawing.Point(142, 0);
             this.previousNotesPanel.Name = "previousNotesPanel";
-            this.previousNotesPanel.Size = new System.Drawing.Size(508, 447);
+            this.previousNotesPanel.Size = new System.Drawing.Size(508, 445);
             this.previousNotesPanel.TabIndex = 3;
             this.previousNotesPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.previousNotesPanel_Paint);
+            // 
+            // exitButton2
+            // 
+            this.exitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.exitButton2.FlatAppearance.BorderSize = 0;
+            this.exitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.exitButton2.Location = new System.Drawing.Point(433, 416);
+            this.exitButton2.Name = "exitButton2";
+            this.exitButton2.Size = new System.Drawing.Size(75, 31);
+            this.exitButton2.TabIndex = 9;
+            this.exitButton2.Text = "Exit";
+            this.exitButton2.UseVisualStyleBackColor = false;
+            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
+            // 
+            // previousNotes
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.previousNotes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.previousNotes.BackgroundColor = System.Drawing.Color.White;
+            this.previousNotes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.previousNotes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.previousNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.previousNotes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.previousNotes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
+            this.previousNotes.Location = new System.Drawing.Point(11, 36);
+            this.previousNotes.Name = "previousNotes";
+            this.previousNotes.Size = new System.Drawing.Size(486, 371);
+            this.previousNotes.TabIndex = 8;
+            this.previousNotes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.previousNotes_CellClick);
+            this.previousNotes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.previousNotes_CellContentClick);
+            this.previousNotes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.previousNotes_CellDoubleClick);
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.editButton.FlatAppearance.BorderSize = 0;
+            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.editButton.Location = new System.Drawing.Point(352, 416);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 31);
+            this.editButton.TabIndex = 7;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
+            // 
+            // deleteButton2
+            // 
+            this.deleteButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.deleteButton2.FlatAppearance.BorderSize = 0;
+            this.deleteButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.deleteButton2.Location = new System.Drawing.Point(352, 418);
+            this.deleteButton2.Name = "deleteButton2";
+            this.deleteButton2.Size = new System.Drawing.Size(75, 27);
+            this.deleteButton2.TabIndex = 6;
+            this.deleteButton2.Text = "Delete";
+            this.deleteButton2.UseVisualStyleBackColor = false;
+            this.deleteButton2.Click += new System.EventHandler(this.deleteButton2_Click);
             // 
             // panel9
             // 
@@ -247,6 +325,18 @@
             this.panel5.Size = new System.Drawing.Size(508, 30);
             this.panel5.TabIndex = 2;
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(5, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 17);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "List of Notes:";
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
@@ -269,18 +359,6 @@
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(5, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 17);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "List of Notes:";
-            // 
             // createEditNotePanel
             // 
             this.createEditNotePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
@@ -295,8 +373,54 @@
             this.createEditNotePanel.Controls.Add(this.panel14);
             this.createEditNotePanel.Location = new System.Drawing.Point(142, 0);
             this.createEditNotePanel.Name = "createEditNotePanel";
-            this.createEditNotePanel.Size = new System.Drawing.Size(508, 447);
+            this.createEditNotePanel.Size = new System.Drawing.Size(508, 445);
             this.createEditNotePanel.TabIndex = 6;
+            // 
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.saveButton.FlatAppearance.BorderSize = 0;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.saveButton.Location = new System.Drawing.Point(352, 416);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 31);
+            this.saveButton.TabIndex = 8;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
+            this.clearButton.FlatAppearance.BorderSize = 0;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.clearButton.Location = new System.Drawing.Point(271, 416);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 31);
+            this.clearButton.TabIndex = 7;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
+            // noteBox
+            // 
+            this.noteBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
+            this.noteBox.Location = new System.Drawing.Point(11, 66);
+            this.noteBox.Multiline = true;
+            this.noteBox.Name = "noteBox";
+            this.noteBox.Size = new System.Drawing.Size(486, 341);
+            this.noteBox.TabIndex = 6;
+            // 
+            // titleBox
+            // 
+            this.titleBox.BackColor = System.Drawing.Color.White;
+            this.titleBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
+            this.titleBox.Location = new System.Drawing.Point(11, 36);
+            this.titleBox.Name = "titleBox";
+            this.titleBox.Size = new System.Drawing.Size(486, 24);
+            this.titleBox.TabIndex = 5;
             // 
             // panel11
             // 
@@ -343,113 +467,16 @@
             this.panel14.Size = new System.Drawing.Size(5, 388);
             this.panel14.TabIndex = 1;
             // 
-            // deleteButton2
-            // 
-            this.deleteButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.deleteButton2.FlatAppearance.BorderSize = 0;
-            this.deleteButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.deleteButton2.Location = new System.Drawing.Point(352, 418);
-            this.deleteButton2.Name = "deleteButton2";
-            this.deleteButton2.Size = new System.Drawing.Size(75, 27);
-            this.deleteButton2.TabIndex = 6;
-            this.deleteButton2.Text = "Delete";
-            this.deleteButton2.UseVisualStyleBackColor = false;
-            this.deleteButton2.Click += new System.EventHandler(this.deleteButton2_Click);
-            // 
-            // editButton
-            // 
-            this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.editButton.FlatAppearance.BorderSize = 0;
-            this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.editButton.Location = new System.Drawing.Point(352, 416);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 31);
-            this.editButton.TabIndex = 7;
-            this.editButton.Text = "Edit";
-            this.editButton.UseVisualStyleBackColor = false;
-            this.editButton.Click += new System.EventHandler(this.editButton_Click);
-            // 
-            // titleBox
-            // 
-            this.titleBox.BackColor = System.Drawing.Color.White;
-            this.titleBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.titleBox.Location = new System.Drawing.Point(11, 36);
-            this.titleBox.Name = "titleBox";
-            this.titleBox.Size = new System.Drawing.Size(486, 24);
-            this.titleBox.TabIndex = 5;
-            // 
-            // noteBox
-            // 
-            this.noteBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
-            this.noteBox.Location = new System.Drawing.Point(11, 66);
-            this.noteBox.Multiline = true;
-            this.noteBox.Name = "noteBox";
-            this.noteBox.Size = new System.Drawing.Size(486, 341);
-            this.noteBox.TabIndex = 6;
-            // 
-            // clearButton
-            // 
-            this.clearButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.clearButton.FlatAppearance.BorderSize = 0;
-            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.clearButton.Location = new System.Drawing.Point(271, 416);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 31);
-            this.clearButton.TabIndex = 7;
-            this.clearButton.Text = "Clear";
-            this.clearButton.UseVisualStyleBackColor = false;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
-            // 
-            // saveButton
-            // 
-            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.saveButton.FlatAppearance.BorderSize = 0;
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.saveButton.Location = new System.Drawing.Point(352, 416);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 31);
-            this.saveButton.TabIndex = 8;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = false;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 36);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 371);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // exitButton2
-            // 
-            this.exitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(76)))));
-            this.exitButton2.FlatAppearance.BorderSize = 0;
-            this.exitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold);
-            this.exitButton2.Location = new System.Drawing.Point(433, 416);
-            this.exitButton2.Name = "exitButton2";
-            this.exitButton2.Size = new System.Drawing.Size(75, 31);
-            this.exitButton2.TabIndex = 9;
-            this.exitButton2.Text = "Exit";
-            this.exitButton2.UseVisualStyleBackColor = false;
-            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
-            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(113)))), ((int)(((byte)(136)))));
             this.ClientSize = new System.Drawing.Size(650, 450);
+            this.Controls.Add(this.previousNotesPanel);
             this.Controls.Add(this.createEditNotePanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.previousNotesPanel);
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dashboard";
@@ -458,13 +485,13 @@
             this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.previousNotesPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.previousNotes)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.createEditNotePanel.ResumeLayout(false);
             this.createEditNotePanel.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -501,7 +528,7 @@
         private System.Windows.Forms.TextBox titleBox;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView previousNotes;
         private System.Windows.Forms.Button exitButton2;
     }
 }
