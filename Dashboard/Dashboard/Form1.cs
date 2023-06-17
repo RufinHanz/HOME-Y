@@ -113,6 +113,10 @@ namespace Dashboard
         }
         private void saveButton_Click(object sender, EventArgs e)
         {
+            this.previousNotesPanel.Show();
+            this.createEditNotePanel.Hide();
+            this.titleBox.Text = string.Empty;
+            this.noteBox.Text = string.Empty;
             if (editing)
             {
                 notes.Rows[previousNotes.CurrentCell.RowIndex]["Title"] = titleBox.Text;
@@ -162,6 +166,7 @@ namespace Dashboard
             try
             {
                 notes.Rows[previousNotes.CurrentCell.RowIndex].Delete();
+                if (notes.Rows == null)
             }
             catch
             {
