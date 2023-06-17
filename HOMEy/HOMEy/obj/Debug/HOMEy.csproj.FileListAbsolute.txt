@@ -9,3 +9,14 @@ C:\Users\ASUS\source\repos\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.GenerateResource.c
 C:\Users\ASUS\source\repos\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\HOMEy\HOMEy\obj\Debug\HOMEy.exe
 C:\Users\ASUS\source\repos\HOMEy\HOMEy\obj\Debug\HOMEy.pdb
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\bin\Debug\HOMEy.exe.config
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\bin\Debug\HOMEy.exe
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\bin\Debug\HOMEy.pdb
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.AssemblyReference.cache
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.mainPage.resources
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.Properties.Resources.resources
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.GenerateResource.cache
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.exe
+C:\Users\ASUS\Source\Repos\RufinHanz\HOME-Y\HOMEy\HOMEy\obj\Debug\HOMEy.pdb

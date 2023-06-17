@@ -30,16 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuPanel = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.timeAndDatePanel = new System.Windows.Forms.Panel();
-            this.timeLabel = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.dateLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.maximizeButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.redoButton = new System.Windows.Forms.Button();
             this.undoButton = new System.Windows.Forms.Button();
@@ -50,12 +41,21 @@
             this.loadButton = new System.Windows.Forms.Button();
             this.createButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.maximizeButton = new System.Windows.Forms.Button();
             this.normalButton = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.timeAndDatePanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.timeAndDatePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPanel
@@ -80,98 +80,24 @@
             this.menuPanel.Size = new System.Drawing.Size(137, 504);
             this.menuPanel.TabIndex = 0;
             // 
-            // richTextBox1
+            // maximizeButton
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(153, 15);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(585, 473);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // timeAndDatePanel
-            // 
-            this.timeAndDatePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.timeAndDatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
-            this.timeAndDatePanel.Controls.Add(this.panel3);
-            this.timeAndDatePanel.Controls.Add(this.panel2);
-            this.timeAndDatePanel.Controls.Add(this.pictureBox2);
-            this.timeAndDatePanel.Controls.Add(this.dateLabel);
-            this.timeAndDatePanel.Controls.Add(this.timeLabel);
-            this.timeAndDatePanel.Location = new System.Drawing.Point(208, 67);
-            this.timeAndDatePanel.Name = "timeAndDatePanel";
-            this.timeAndDatePanel.Size = new System.Drawing.Size(543, 226);
-            this.timeAndDatePanel.TabIndex = 1;
-            // 
-            // timeLabel
-            // 
-            this.timeLabel.AutoSize = true;
-            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.timeLabel.ForeColor = System.Drawing.Color.White;
-            this.timeLabel.Location = new System.Drawing.Point(157, 60);
-            this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(199, 76);
-            this.timeLabel.TabIndex = 0;
-            this.timeLabel.Text = "00:00";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // dateLabel
-            // 
-            this.dateLabel.AutoSize = true;
-            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
-            this.dateLabel.Location = new System.Drawing.Point(164, 136);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(170, 31);
-            this.dateLabel.TabIndex = 2;
-            this.dateLabel.Text = "Current Date";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
-            this.panel2.Location = new System.Drawing.Point(351, 62);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 74);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(473, 136);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(70, 31);
-            this.panel3.TabIndex = 5;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::HOMEy.Properties.Resources.clock_png_25789;
-            this.pictureBox2.Location = new System.Drawing.Point(53, 62);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(105, 105);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.maximizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
+            this.maximizeButton.FlatAppearance.BorderSize = 0;
+            this.maximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maximizeButton.Image = global::HOMEy.Properties.Resources.maximize1;
+            this.maximizeButton.Location = new System.Drawing.Point(34, 5);
+            this.maximizeButton.Name = "maximizeButton";
+            this.maximizeButton.Size = new System.Drawing.Size(25, 25);
+            this.maximizeButton.TabIndex = 18;
+            this.maximizeButton.UseVisualStyleBackColor = false;
+            this.maximizeButton.Click += new System.EventHandler(this.maximizeButton_Click_1);
+            this.maximizeButton.MouseLeave += new System.EventHandler(this.maximizeButton_MouseLeave);
+            this.maximizeButton.MouseHover += new System.EventHandler(this.maximizeButton_MouseHover);
             // 
             // backButton
             // 
+            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.backButton.FlatAppearance.BorderSize = 0;
             this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.backButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -330,21 +256,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // maximizeButton
-            // 
-            this.maximizeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
-            this.maximizeButton.FlatAppearance.BorderSize = 0;
-            this.maximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maximizeButton.Image = global::HOMEy.Properties.Resources.maximize1;
-            this.maximizeButton.Location = new System.Drawing.Point(34, 5);
-            this.maximizeButton.Name = "maximizeButton";
-            this.maximizeButton.Size = new System.Drawing.Size(25, 25);
-            this.maximizeButton.TabIndex = 18;
-            this.maximizeButton.UseVisualStyleBackColor = false;
-            this.maximizeButton.Click += new System.EventHandler(this.maximizeButton_Click_1);
-            this.maximizeButton.MouseLeave += new System.EventHandler(this.maximizeButton_MouseLeave);
-            this.maximizeButton.MouseHover += new System.EventHandler(this.maximizeButton_MouseHover);
-            // 
             // normalButton
             // 
             this.normalButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
@@ -359,6 +270,96 @@
             this.normalButton.Click += new System.EventHandler(this.normalButton_Click);
             this.normalButton.MouseLeave += new System.EventHandler(this.normalButton_MouseLeave);
             this.normalButton.MouseHover += new System.EventHandler(this.normalButton_MouseHover);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(153, 15);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(585, 473);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // timeAndDatePanel
+            // 
+            this.timeAndDatePanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.timeAndDatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(49)))));
+            this.timeAndDatePanel.Controls.Add(this.panel3);
+            this.timeAndDatePanel.Controls.Add(this.panel2);
+            this.timeAndDatePanel.Controls.Add(this.pictureBox2);
+            this.timeAndDatePanel.Controls.Add(this.dateLabel);
+            this.timeAndDatePanel.Controls.Add(this.timeLabel);
+            this.timeAndDatePanel.Location = new System.Drawing.Point(208, 67);
+            this.timeAndDatePanel.Name = "timeAndDatePanel";
+            this.timeAndDatePanel.Size = new System.Drawing.Size(543, 226);
+            this.timeAndDatePanel.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(473, 136);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(70, 31);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
+            this.panel2.Location = new System.Drawing.Point(351, 62);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 74);
+            this.panel2.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::HOMEy.Properties.Resources.clock_png_25789;
+            this.pictureBox2.Location = new System.Drawing.Point(53, 62);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(105, 105);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.dateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
+            this.dateLabel.Location = new System.Drawing.Point(164, 136);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(170, 31);
+            this.dateLabel.TabIndex = 2;
+            this.dateLabel.Text = "Current Date";
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.timeLabel.ForeColor = System.Drawing.Color.White;
+            this.timeLabel.Location = new System.Drawing.Point(157, 60);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(199, 76);
+            this.timeLabel.TabIndex = 0;
+            this.timeLabel.Text = "00:00";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // mainPage
             // 
@@ -375,10 +376,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.mainPage_Load);
             this.menuPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.timeAndDatePanel.ResumeLayout(false);
             this.timeAndDatePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
