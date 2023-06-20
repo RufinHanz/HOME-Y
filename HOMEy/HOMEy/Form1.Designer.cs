@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPage));
             this.menuPanel = new System.Windows.Forms.Panel();
             this.maximizeButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
@@ -153,7 +154,7 @@
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(116)))), ((int)(((byte)(3)))));
-            this.clearButton.Image = global::HOMEy.Properties.Resources.Delete;
+            this.clearButton.Image = global::HOMEy.Properties.Resources.Clear;
             this.clearButton.Location = new System.Drawing.Point(12, 272);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(125, 39);
@@ -371,6 +372,7 @@
             this.Controls.Add(this.timeAndDatePanel);
             this.Controls.Add(this.menuPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
